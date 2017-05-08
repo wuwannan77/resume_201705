@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+/*响应式设计*/
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/**/
+section.summary{
+    /*vh : viewport height*/
+    height: 100vh; 
+    /*background: red;*/
+    /*CSS 3的属性,模块居中 水平居中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*垂直居中*/
+    flex-direction: column;
+    background: transparent url(./img/wallhaven-504330.jpg);
+}
+section.summary img.avatar{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+section.summary .profile{
+    line-height: 1.5;
+    /*border: 1px solid red;*/
+    text-align: center;
+}
+/*作品集区域*/
+section.works{
+    height: 100vh;
+    background:#F4F4F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.works img{
+    /*只设置宽度，高度会默认适配*/
+    max-width: 200px;
+}
+section.works .imageWrapper{
+    padding: 10px 10px 3px 10px;
+    background: white;
+    text-align: right;
+}
+section.works >ul{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    justify-content: space-between;
+}
+section.works >ul h3{
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 10px;
+    margin: 8px 0;
+}
+section.works > h2,section.contacts > h2{
+    font-size: 32px;
+    margin-bottom: 
+}
+
+/*技能模块*/
+section.skills{
+    height: 100vh;
+
+}
+
+/*联系我模块 左右结构*/
+section.contacts{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2;
+}
+
+section.contacts > dl{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20em;
+}
+section.contacts > dl > dt{
+    width: 3em;
+} 
+section.contacts > dl > dd{
+    width: 17em;
+} 
+section.contacts > dl a{
+    text-decoration: underline;
+}
